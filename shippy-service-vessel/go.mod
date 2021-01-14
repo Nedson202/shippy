@@ -2,6 +2,8 @@ module github.com/nedson202/shippy/shippy-service-vessel
 
 go 1.15
 
+replace github.com/nedson202/shippy/shippy-service-vessel => ../shippy-service-vessel
+
 replace google.golang.org/grpc => google.golang.org/grpc v1.27.0
 
 replace github.com/coreos/etcd => github.com/ozonru/etcd v3.3.20-grpc1.27-origmodule+incompatible
@@ -22,6 +24,7 @@ require (
 	github.com/nats-io/jwt v1.2.2 // indirect
 	github.com/nats-io/nats-server/v2 v2.1.9 // indirect
 	github.com/russross/blackfriday/v2 v2.1.0 // indirect
+	go.mongodb.org/mongo-driver v1.4.4
 	go.uber.org/multierr v1.6.0 // indirect
 	go.uber.org/zap v1.16.0 // indirect
 	golang.org/x/crypto v0.0.0-20201221181555-eec23a3978ad // indirect

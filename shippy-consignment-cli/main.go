@@ -1,4 +1,4 @@
-// shippy/shippy-cli-consignment/main.go
+// shippy/shippy-consignment-cli/main.go
 package main
 
 import (

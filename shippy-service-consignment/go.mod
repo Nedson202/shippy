@@ -38,24 +38,23 @@ require (
 	github.com/nats-io/jwt v1.2.2 // indirect
 	github.com/nats-io/nats-server/v2 v2.1.9 // indirect
 	github.com/nats-io/nats.go v1.10.0 // indirect
+	github.com/nedson202/shippy/shippy-service-vessel v0.0.0-20210114121704-1e278aba2326
 	github.com/onsi/ginkgo v1.8.0 // indirect
 	github.com/onsi/gomega v1.5.0 // indirect
+	github.com/pkg/errors v0.9.1
 	github.com/russross/blackfriday/v2 v2.1.0 // indirect
 	github.com/spf13/viper v1.6.3 // indirect
 	github.com/stripe/stripe-go/v71 v71.28.0 // indirect
 	github.com/teris-io/shortid v0.0.0-20171029131806-771a37caa5cf // indirect
 	github.com/ugorji/go v1.2.3 // indirect
 	github.com/xanzy/ssh-agent v0.3.0 // indirect
+	go.mongodb.org/mongo-driver v1.4.4
 	go.uber.org/multierr v1.6.0 // indirect
 	go.uber.org/zap v1.16.0 // indirect
 	golang.org/x/crypto v0.0.0-20201221181555-eec23a3978ad // indirect
 	golang.org/x/lint v0.0.0-20201208152925-83fdc39ff7b5 // indirect
 	golang.org/x/net v0.0.0-20201224014010-6772e930b67b // indirect
-	golang.org/x/sys v0.0.0-20210113131315-ba0562f347e0 // indirect
 	golang.org/x/text v0.3.5 // indirect
-	golang.org/x/tools v0.0.0-20210111221946-d33bae441459 // indirect
-	google.golang.org/genproto v0.0.0-20210111234610-22ae2b108f89 // indirect
-	google.golang.org/grpc v1.34.1 // indirect
 	google.golang.org/grpc/examples v0.0.0-20210111180913-4cf4a98505bc // indirect
 	google.golang.org/protobuf v1.25.0
 	gopkg.in/go-playground/validator.v9 v9.31.0 // indirect
