@@ -55,7 +55,7 @@ require (
 	golang.org/x/text v0.3.5 // indirect
 	golang.org/x/tools v0.0.0-20210111221946-d33bae441459 // indirect
 	google.golang.org/genproto v0.0.0-20210111234610-22ae2b108f89 // indirect
-	google.golang.org/grpc v1.34.1
+	google.golang.org/grpc v1.34.1 // indirect
 	google.golang.org/grpc/examples v0.0.0-20210111180913-4cf4a98505bc // indirect
 	google.golang.org/protobuf v1.25.0
 	gopkg.in/go-playground/validator.v9 v9.31.0 // indirect
