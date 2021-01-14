@@ -1,8 +1,8 @@
-module github.com/nedson202/shippy/shippy-cli-consignment
+module github.com/nedson202/shippy/shippy-consignment-cli
 
 go 1.15
 
-// replace github.com/nedson202/shippy/shippy-cli-consignment => ../shippy-cli-consignment
+// replace github.com/nedson202/shippy/shippy-consignment-cli => ../shippy-consignment-cli
 
 // replace github.com/nedson202/shippy/shippy-service-consignment => ../shippy-service-consignment
 
@@ -54,7 +54,7 @@ require (
 	github.com/mitchellh/hashstructure v1.1.0 // indirect
 	github.com/nats-io/jwt v1.2.2 // indirect
 	github.com/nats-io/nats-server/v2 v2.1.9 // indirect
-	github.com/nedson202/shippy/shippy-service-consignment v0.0.0-20210113144628-6b40b18abb92
+	github.com/nedson202/shippy/shippy-service-consignment v0.0.0-20210114121704-1e278aba2326
 	github.com/niemeyer/pretty v0.0.0-20200227124842-a10e7caefd8e // indirect
 	github.com/russross/blackfriday/v2 v2.1.0 // indirect
 	go.uber.org/multierr v1.6.0 // indirect
