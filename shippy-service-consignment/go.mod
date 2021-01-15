@@ -4,8 +4,6 @@ go 1.15
 
 replace github.com/nedson202/shippy/shippy-service-consignment => ../shippy-service-consignment
 
-// replace google.golang.org/grpc => google.golang.org/grpc v1.33.0-dev
-
 replace google.golang.org/grpc => google.golang.org/grpc v1.27.0
 
 replace github.com/coreos/etcd => github.com/ozonru/etcd v3.3.20-grpc1.27-origmodule+incompatible
