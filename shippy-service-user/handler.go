@@ -9,14 +9,8 @@ import (
 	"golang.org/x/crypto/bcrypt"
 )
 
-type authable interface {
-	Decode(token string) (*CustomClaims, error)
-	Encode(user *pb.User) (string, error)
-}
-
 type handler struct {
-	repository   Repository
-	tokenService authable
+	repository Repository
 }
 
 func (s *handler) Get(ctx context.Context, req *pb.User, res *pb.Response) error {
@@ -44,6 +38,8 @@ func (s *handler) GetAll(ctx context.Context, req *pb.Request, res *pb.Response)
 }
 
 func (s *handler) Auth(ctx context.Context, req *pb.User, res *pb.Token) error {
+	tokenService := &TokenService{}
+
 	user, err := s.repository.GetByEmail(ctx, req.Email)
 	if err != nil {
 		return err
@@ -53,7 +49,7 @@ func (s *handler) Auth(ctx context.Context, req *pb.User, res *pb.Token) error {
 		return err
 	}
 
-	token, err := s.tokenService.Encode(req)
+	token, err := tokenService.Encode(req)
 	if err != nil {
 		return err
 	}
@@ -81,7 +77,8 @@ func (s *handler) Create(ctx context.Context, req *pb.User, res *pb.Response) er
 }
 
 func (s *handler) ValidateToken(ctx context.Context, req *pb.Token, res *pb.Token) error {
-	claims, err := s.tokenService.Decode(req.Token)
+	tokenService := &TokenService{}
+	claims, err := tokenService.Decode(req.Token)
 	if err != nil {
 		return err
 	}

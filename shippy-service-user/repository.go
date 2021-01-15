@@ -86,7 +86,8 @@ func (r *PostgresRepository) Get(ctx context.Context, id string) (*User, error) 
 }
 
 func (r *PostgresRepository) Create(ctx context.Context, user *User) error {
-	user.ID = uuid.NewV4().String()
+	uID, _ := uuid.NewV4()
+	user.ID = uID.String()
 	query := "insert into users (id, name, email, company, password) values ($1, $2, $3, $4, $5)"
 	_, err := r.db.ExecContext(ctx, query, user.ID, user.Name, user.Email, user.Company, user.Password)
 	return err
